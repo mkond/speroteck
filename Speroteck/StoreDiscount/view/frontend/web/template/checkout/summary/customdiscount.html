@@ -1,7 +1,7 @@
 <!-- ko if: isDisplayedCustomdiscount() -->
 <tr class="totals customdiscount excl">
     <th class="mark" colspan="1" scope="row" data-bind="text: discount_description"></th>
-    <td class="amount"  data-bind="text: 'test', attr: {'data-th': discount_description}">
+    <td class="amount"  data-bind="text: getDiscountDescription(), attr: {'data-th': discount_description}">
         <span class="price" data-bind="text: getCustomDiscount(), attr: {'data-th': custom_discount}"></span>
 
     </td>

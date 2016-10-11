@@ -6,6 +6,11 @@ define(
     function ($,Component) {
         "use strict";
         return Component.extend({
+            initialize: function () {
+                this._super();
+                // component initialization logic
+                return this;
+            },
             defaults: {
                 template: 'Speroteck_StoreDiscount/checkout/summary/customdiscount'
             },
@@ -14,7 +19,8 @@ define(
             },
             getCustomDiscount : function(){
                 return '$10';
-            }
+            },
+
         });
     }
 );
